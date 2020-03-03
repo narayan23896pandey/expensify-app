@@ -1,0 +1,96 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Narayan Pandey\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js init
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;c:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\dotnet\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Users\Narayan Pandey\Anaconda3;C:\wamp\bin\mysql\mysql5.1.53\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\Narayan Pandey\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Narayan Pandey\AppData\Local\Programs\Python\Python37-32\;C:\Users\Narayan Pandey\AppData\Local\Microsoft\WindowsApps;C:\Users\Narayan Pandey\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Narayan Pandey\AppData\Roaming\npm;C:\Program Files\heroku\bin
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  10.16.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (C:\Users\Narayan Pandey\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:136925:13)
+      at Interface.emit (events.js:198:13)
+      at Interface._ttyWrite (readline.js:801:16)
+      at ReadStream.onkeypress (readline.js:184:10)
+      at ReadStream.emit (events.js:198:13)
+      at emitKeys (internal/readline.js:424:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1075:36)
+      at ReadStream.emit (events.js:198:13)
+      at addChunk (_stream_readable.js:288:12)
+
+npm manifest: 
+  {
+    "name": "expensify-app",
+    "version": "1.0.0",
+    "description": "React App",
+    "main": "index.js",
+    "keywords": [],
+    "author": "Narayan",
+    "license": "ISC",
+    "scripts": {
+      "serve": "live-server public/",
+      "build:dev": "webpack",
+      "build:prod": "webpack -p --env production",
+      "dev-server": "webpack-dev-server",
+      "test": "jest --config=jest.config.json",
+      "start": "node server/server.js",
+      "heroku-postbuild": "npm run build:prod"
+    },
+    "dependencies": {
+      "@babel/cli": "^7.8.4",
+      "@babel/core": "^7.8.6",
+      "@babel/plugin-proposal-class-properties": "^7.8.3",
+      "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+      "@babel/preset-env": "^7.8.6",
+      "@babel/preset-react": "^7.8.3",
+      "babel-cli": "^6.26.0",
+      "babel-loader": "^8.0.6",
+      "babel-plugin-transform-class-properties": "^6.24.1",
+      "babel-plugin-transform-object-rest-spread": "^6.26.0",
+      "babel-preset-env": "^1.7.0",
+      "babel-preset-react": "^6.24.1",
+      "css-loader": "3.4.2",
+      "enzyme": "^3.11.0",
+      "enzyme-adapter-react-16": "^1.15.2",
+      "enzyme-shallow-equal": "^1.0.1",
+      "enzyme-to-json": "^3.4.4",
+      "express": "^4.17.1",
+      "extract-text-webpack-plugin": "^4.0.0-beta.0",
+      "jest": "^25.1.0",
+      "live-server": "^1.2.1",
+      "moment": "^2.24.0",
+      "node-sass": "^4.13.1",
+      "normalize.css": "^8.0.1",
+      "raf": "^3.4.1",
+      "react": "^16.12.0",
+      "react-addons-shallow-compare": "^15.6.2",
+      "react-dates": "^21.8.0",
+      "react-dom": "^16.12.0",
+      "react-modal": "^3.11.1",
+      "react-redux": "^7.2.0",
+      "react-router-dom": "^5.1.2",
+      "react-test-renderer": "^16.13.0",
+      "redux": "^4.0.5",
+      "sass-loader": "8.0.2",
+      "style-loader": "^1.1.3",
+      "uuid": "^3.4.0",
+      "validator": "^12.2.0",
+      "webpack": "^4.41.6",
+      "webpack-cli": "^3.3.11",
+      "webpack-dev-server": "^3.10.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
