@@ -62,7 +62,7 @@ test('should sort by amount', () => {
   expect(sortByAmount).toHaveBeenCalled();
 });
 
-/*test('should handle date changes', () => {
+test('should handle date changes', () => {
   const startDate = moment(0).add(4, 'years');
   const endDate = moment(0).add(8, 'years');
   wrapper.find('withStyles(SingleDatePicker)').prop('onDatesChange')({ startDate, endDate });
@@ -75,4 +75,3 @@ test('hould handle date focus changes', () => {
   wrapper.find('withStyles(SingleDatePicker)').prop('onFocusChange')(calendarFocused);
   expect(wrapper.state('calendarFocused')).toBe(calendarFocused);
 });
-*/
