@@ -5,7 +5,7 @@ const promise = new Promise((resolve, reject) => {
       age: 23
     });
     // reject('Something went wrong!');
-  }, 5000);
+  }, 10000);
 });
 
 console.log('before');
