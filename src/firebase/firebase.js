@@ -6,14 +6,28 @@ const config = {
   databaseURL: process.env.FIREBASE_AUTH_DOMAIN,
   projectId: process.env.FIREBASE_AUTH_DOMAIN,
   storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID
+  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.FIREBASE_APP_ID,
+  measurementId: process.env.FIREBASE_MEASUREMENT_ID
 };
 
 firebase.initializeApp(config);
 
 const database = firebase.database();
-
 export { firebase, database as default };
+
+/*database.ref().set({
+  name: 'Andrew Mead',
+  age: 26,
+
+}).then(() => {
+  console.log('Data is saved!');
+}).catch((e) => {
+  console.log('This failed.', e);
+});
+*/
+
+
 
 // // child_removed
 // database.ref('expenses').on('child_removed', (snapshot) => {
