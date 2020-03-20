@@ -11,7 +11,15 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: $m-size;
   line-height: 1.6;
+  footer{
+    background: $dark-blue;
+    color: $dark-grey;
+    font-size: $l-size;
+    text-align: center;
+  }
+
 }
+
 
 button {
   cursor: pointer;
