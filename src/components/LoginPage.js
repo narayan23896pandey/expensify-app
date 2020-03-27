@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { startLogin } from '../actions/auth';
-import { startLoginFacebook } from '../actions/auth';
+//import { startLoginFacebook } from '../actions/auth';
 import { startLoginGithub } from '../actions/auth';
 
 export const LoginPage = ({ startLogin, startLoginFacebook, startLoginGithub }) => (
@@ -11,9 +11,6 @@ export const LoginPage = ({ startLogin, startLoginFacebook, startLoginGithub }) 
       <p>It's time to get your expenses under control.</p>
       <button className="button" onClick={startLogin}>Login with Google</button>
       <button className="button" onClick={startLoginGithub}>Login with Github</button>
-      <button className="button" onClick={startLoginFacebook}>Login with facebook</button>
-
-
     </div>
   </div>
 );
@@ -21,7 +18,7 @@ export const LoginPage = ({ startLogin, startLoginFacebook, startLoginGithub }) 
 const mapDispatchToProps = (dispatch) => ({
   startLogin: () => dispatch(startLogin()),
   startLoginGithub: () => dispatch(startLoginGithub()),
-  startLoginFacebook: () => dispatch(startLoginFacebook())
+  //startLoginFacebook: () => dispatch(startLoginFacebook())
 
 });
 
